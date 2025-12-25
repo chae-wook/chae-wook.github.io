@@ -1,12 +1,193 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chaewook</title>
+  <title>[Your Name] — Accounting Research</title>
+  <meta name="description" content="[Your Name] | Accounting PhD Applicant | Research, CV, and Code Samples" />
+
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#111826; --text:#e7eef7; --muted:#a9b6c6;
+      --line:#223044; --accent:#7dd3fc; --accent2:#a78bfa;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 80px}
+    header{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px}
+    nav{display:flex; gap:14px; flex-wrap:wrap}
+    nav a{color:var(--muted)}
+    nav a:hover{color:var(--text)}
+    .card{
+      background:rgba(17,24,38,.9);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:18px;
+      margin-top:16px;
+    }
+    h1{margin:0 0 10px; font-size:32px}
+    h2{margin:0 0 10px; font-size:18px}
+    .sub{color:var(--muted); line-height:1.6}
+    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .pill{
+      font-size:13px; color:var(--muted);
+      padding:6px 10px; border:1px solid var(--line); border-radius:999px;
+    }
+    .btnrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius:10px;
+      font-weight:600;
+    }
+    .btn.primary{
+      background:linear-gradient(135deg, rgba(125,211,252,.2), rgba(167,139,250,.2));
+      border-color:transparent;
+    }
+    .item{margin-top:10px}
+    footer{margin-top:32px; color:var(--muted); font-size:13px}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, monospace;}
+  </style>
 </head>
+
 <body>
-  <h1>안녕하세요, Chaewook의 GitHub Pages!</h1>
-  <p>첫 페이지 성공 🎉</p>
+  <div class="wrap">
+    <header>
+      <div>
+        <strong>[Your Name]</strong><br/>
+        <span class="sub">Accounting PhD Applicant</span>
+      </div>
+      <nav>
+        <a href="#research">Research</a>
+        <a href="#papers">Papers</a>
+        <a href="#cv">CV</a>
+        <a href="#code">Code</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- INTRO -->
+    <section class="card">
+      <h1>Hello, I’m [Your Name].</h1>
+      <p class="sub">
+        I am an aspiring <b>Accounting PhD student</b> with research interests in
+        <b>[Interest 1]</b>, <b>[Interest 2]</b>, and <b>[Interest 3]</b>.
+        My primary goal is to study <b>[your main research question / motivation]</b>.
+      </p>
+
+      <div class="pillrow">
+        <span class="pill">Financial Accounting</span>
+        <span class="pill">Capital Markets</span>
+        <span class="pill">Disclosure</span>
+        <span class="pill">Audit</span>
+        <span class="pill">ESG</span>
+      </div>
+
+      <div class="btnrow">
+        <a class="btn primary" href="files/CV.pdf" target="_blank">Download CV (PDF)</a>
+        <a class="btn" href="[Google Scholar URL]" target="_blank">Google Scholar</a>
+        <a class="btn" href="[GitHub URL]" target="_blank">GitHub</a>
+        <a class="btn" href="[LinkedIn URL]" target="_blank">LinkedIn</a>
+      </div>
+
+      <p class="sub" style="margin-top:12px">
+        📍 [City, Country] &nbsp;·&nbsp;
+        📧 <a class="mono" href="mailto:[email]">[email]</a>
+      </p>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="card" id="research">
+      <h2>Research Interests</h2>
+      <p class="sub">
+        My research focuses on how <b>[accounting behavior / information / regulation]</b>
+        affects <b>[capital markets / firm outcomes / stakeholders]</b>.
+        I am particularly interested in topics such as <b>[topic A]</b> and <b>[topic B]</b>,
+        using empirical methods and large-scale archival data.
+      </p>
+
+      <div class="item">
+        <p class="sub">
+          <b>Methods:</b> Causal inference, panel regressions, DiD, IV, text analysis<br/>
+          <b>Data:</b> Compustat, CRSP, Audit Analytics, EDGAR, ESG datasets
+        </p>
+      </div>
+    </section>
+
+    <!-- PAPERS -->
+    <section class="card" id="papers">
+      <h2>Working Papers / Research in Progress</h2>
+
+      <div class="item">
+        <p><b>[Paper Title 1]</b></p>
+        <p class="sub">
+          One-line description of the research question, method, and contribution.
+        </p>
+      </div>
+
+      <div class="item">
+        <p><b>[Paper Title 2]</b></p>
+        <p class="sub">
+          One-line description (optional).
+        </p>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="card" id="cv">
+      <h2>Curriculum Vitae (Summary)</h2>
+
+      <div class="item">
+        <p><b>Education</b></p>
+        <p class="sub">[University], [Degree], [Field], [Year]</p>
+      </div>
+
+      <div class="item">
+        <p><b>Research Experience</b></p>
+        <p class="sub">Research Assistant — [Advisor / Institution], [Years]</p>
+      </div>
+
+      <div class="item">
+        <p><b>Skills</b></p>
+        <p class="sub">Stata, R, Python, SQL, empirical analysis, data cleaning</p>
+      </div>
+
+      <div class="btnrow">
+        <a class="btn primary" href="files/CV.pdf" target="_blank">Full CV (PDF)</a>
+      </div>
+    </section>
+
+    <!-- CODE -->
+    <section class="card" id="code">
+      <h2>Code Samples</h2>
+
+      <div class="item">
+        <p><b>[Project / Repository Name]</b></p>
+        <p class="sub">
+          Description (e.g., EDGAR text processing, variable construction, replication code).
+        </p>
+        <a class="btn" href="[GitHub Repo URL]" target="_blank">Repository</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p class="sub">
+        Email: <a class="mono" href="mailto:[email]">[email]</a><br/>
+        CV: <a class="mono" href="files/CV.pdf" target="_blank">files/CV.pdf</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2025 [Your Name]. Last updated: 2025-12.
+    </footer>
+  </div>
 </body>
 </html>
